@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { QoutesComponent } from './qoutes/qoutes.component';
 import { VotesComponent } from './votes/votes.component';
-import { QoutedetailsComponent } from './qoutedetails/qoutedetails.component';
 import { QuoteformComponent } from './quoteform/quoteform.component';
+import { QuotedetailsComponent } from './quotedetails/quotedetails.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,9 @@ import { QuoteformComponent } from './quoteform/quoteform.component';
     AboutComponent,
     QoutesComponent,
     VotesComponent,
-    QoutedetailsComponent,
-    QuoteformComponent
+    QuotedetailsComponent,
+    QuoteformComponent,
+    QuotedetailsComponent
   ],
   imports: [
     BrowserModule,
