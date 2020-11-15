@@ -1,4 +1,45 @@
- <form>
+<div class="container">
+    <h1>New quote </h1>
+    <div class="row">
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' >
+            <!-- <div class="form-group"> -->
+                <div class="form-group"><label>Author</label><br>
+                <input type="name" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel"><br>
+            </div>
+            <div class="form-group">
+                <label>Quotes</label><br>
+                <textarea rows="5"  id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel"></textarea> 
+            </div>           
+            <div class="form-group">
+                <label for complete>Post date</label>
+                <input type="date" id="complete">
+            </div>
+            <div class="form-group">    
+                <label>Submitter</label><br>
+                <input type="name" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel">
+            </div>
+            <button class="btn btn-primary "type="submit">submit</button>
+
+        </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form (ngsubmit)='submitQuote()' #quoteForm='ngForm'>
     <label for="name">Author</label>
     <input type="text" required class="form-control" id="author" ngModel='newQuote.author' name="author">
     <label for="name">Your name</label>
@@ -13,4 +54,4 @@
         <input type='date' id="complete" required>
     </div>
     <button type="submit" class="btn btn-success btn-lg">Submit new Quote</button>
-</form>
+</form> -->

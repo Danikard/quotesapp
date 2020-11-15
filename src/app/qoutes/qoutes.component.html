@@ -4,11 +4,22 @@
         quotes maker
     </h1>
     <div class="quotess" *ngFor= 'let quote of quotes; let i=index'>
-        <p>{{quote.publisher}}</p>  
-        <p>{{quote.author}}</p>
+        <!-- <p>{{quote.publisher}}</p>  
+        <p>{{quote.author}}</p> -->
         <p>{{quote.name}}</p>
         <p>{{quote.dDate|date}}</p>
-        
-    </div>
     
+    <div>
+        <app-quotedetails *ngIf='quote.showDescription' [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quotedetails>
+  </div>
+  <div class="card-footer">
+        <button class="btn btn-primary " (click)='toggleDetails(i)'>Show detail</button>
+  </div> 
+</div>      
+        
+
+     
+<div class="col- md-6" id="from">
+<app-quoteform (addQuote)="addNewQuote($event)"></app-quoteform>
+</div>
 </body>
