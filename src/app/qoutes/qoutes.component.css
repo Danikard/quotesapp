@@ -1,8 +1,11 @@
-.body{
+#background{
     background-image: url(src/assets/images/lake_trees_shore_192678_300x168.jpg);
     background-size: cover;
     width: 100%;
 
+}
+#background{
+    margin-left: 240px;
 }
 #quotess{
     padding-left: 200px;
@@ -11,8 +14,12 @@
     padding-left: 200px;
     margin-right: 700px;
 }
-/* #Q{
+h1{
     text-align: center;
+
+}
+/* #Q{
+   
 
 }
 #some{

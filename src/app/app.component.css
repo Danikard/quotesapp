@@ -1,3 +1,8 @@
-.background{
+/* .background{
     background-image:url("https://images.wallpaperscraft.com/image/lake_trees_shore_192678_300x168.jpg")
+} */
+#background{
+    background-image: url("https://images.wallpaperscraft.com/image/city_buildings_architecture_185752_1280x720.jpg");
+    background-size: cover;
+    width: 100%;
 }
