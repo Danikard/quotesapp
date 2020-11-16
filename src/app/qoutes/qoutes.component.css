@@ -1,0 +1,20 @@
+container-fluid{
+    background-image: url("https://images.wallpaperscraft.com/image/lake_trees_shore_192678_300x168.jpg");
+    background-size: cover;
+    width: 100%;
+
+}
+#quotess{
+    padding-left: 200px;
+}
+#from{
+    padding-left: 200px;
+    margin-right: 700px;
+}
+/* #Q{
+    text-align: center;
+
+}
+#some{
+    padding-left: 280px; 
+} */
